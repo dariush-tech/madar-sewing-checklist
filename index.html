@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>چک‌لیست دوخت اولین لباس</title>
+<meta name="description" content="دموی پیشنهادی DARIUSH Digital Studio برای آموزشگاه هنر مادر: چک‌لیست عملی مهارت‌های دوخت اولین لباس، پیشرفت هنرجو، قدم بعدی و خلاصه برای مربی. محتوا نمونه است.">
+<meta name="theme-color" content="#a3324f">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="چک‌لیست دوخت اولین لباس · دمو برای آموزشگاه هنر مادر">
+<meta property="og:description" content="هنرجو می‌بیند برای دوخت اولین لباس کدام مهارت‌ها را تمرین کرده و قدم بعدی چیست.">
+<meta property="og:url" content="https://dariush-tech.github.io/madar-sewing-checklist/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23a3324f'/%3E%3Cpath d='M9 23L23 9' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='21' cy='11' r='2.4' fill='none' stroke='white' stroke-width='1.8'/%3E%3Cpath d='M8 12c3 0 3 4 6 4s3 4 6 4' fill='none' stroke='%23f6c9d4' stroke-width='1.6' stroke-dasharray='2 2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&display=swap">
+<style>
+/* Layout: a sewing-atelier notebook. Header with the proposal tag, title and sample button. Then the first-garment
+   picker. On desktop the six skill stages run down the main column, joined by a stitched line whose dots fill as
+   stages are mastered, and a sticky side panel holds progress, the next step and the teacher summary. On phones the
+   progress and next step come first and a slim bar keeps the percentage and next step in reach. */
+:root {
+  --bg: #fbf7f2;
+  --surface: #ffffff;
+  --surface-2: #f4ede4;
+  --ink: #2a2320;
+  --muted: #6a6058;
+  --line: #eadfd3;
+  --line-strong: #d6c6b5;
+  --primary: #a3324f;
+  --primary-ink: #ffffff;
+  --primary-soft: #f8e4ea;
+  --done: #3f7a4d;   --done-bg: #e3f1e5;
+  --doing: #9a6410;  --doing-bg: #fbefd7;
+  --todo: #8a8079;
+  --shadow: 0 1px 2px rgba(42, 35, 32, 0.05), 0 14px 30px -20px rgba(42, 35, 32, 0.35);
+  --r: 14px;
+  --body: "Vazirmatn", "Tahoma", "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17130f; --surface: #211b17; --surface-2: #2b241e; --ink: #f1e9e1; --muted: #b3a79b; --line: #362d26; --line-strong: #4b4038;
+    --primary: #f08aa5; --primary-ink: #2a0a14; --primary-soft: #3b1a24;
+    --done: #79c98b; --done-bg: #1a3322; --doing: #f0c063; --doing-bg: #3a2c12; --todo: #8f8379;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 30px -20px rgba(0, 0, 0, 0.9);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17130f; --surface: #211b17; --surface-2: #2b241e; --ink: #f1e9e1; --muted: #b3a79b; --line: #362d26; --line-strong: #4b4038;
+  --primary: #f08aa5; --primary-ink: #2a0a14; --primary-soft: #3b1a24;
+  --done: #79c98b; --done-bg: #1a3322; --doing: #f0c063; --doing-bg: #3a2c12; --todo: #8f8379;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 30px -20px rgba(0, 0, 0, 0.9);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15.5px; line-height: 1.75; direction: rtl; -webkit-text-size-adjust: 100%; }
+button, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+h1, h2, h3 { margin: 0; line-height: 1.35; text-wrap: balance; }
+p { margin: 0; }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.muted { color: var(--muted); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.demo { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; color: var(--muted); border: 1px solid var(--line-strong); border-radius: 999px; padding: 0 8px; line-height: 1.7; white-space: nowrap; vertical-align: 1px; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 9px 18px; border-radius: 12px; border: 1.5px solid transparent; font-weight: 700; line-height: 1.3; color: var(--ink); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn-primary { background: var(--primary); color: var(--primary-ink); }
+.btn-primary:hover { filter: brightness(1.06); }
+.btn-line { background: var(--surface); border-color: var(--line-strong); }
+.btn-line:hover { border-color: var(--ink); }
+.btn-sm { min-height: 36px; padding: 5px 12px; font-size: 13.5px; }
+
+/* header */
+.head { background: var(--surface); border-bottom: 2px dashed var(--line-strong); }
+.head-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding-top: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15px; }
+.brand svg { width: 34px; height: 34px; flex: none; }
+.tag { font-size: 11.5px; font-weight: 700; color: var(--primary); background: var(--primary-soft); padding: 1px 10px; border-radius: 999px; }
+.head-top .link { margin-inline-start: auto; border: 0; background: none; color: var(--muted); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; padding: 6px 2px; }
+.hero { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 24px; padding-top: 18px; padding-bottom: 22px; }
+.hero h1 { font-size: clamp(1.7rem, 5vw, 2.6rem); font-weight: 900; }
+.hero p { color: var(--muted); margin-top: 6px; max-width: 58ch; }
+.reset-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 10px 14px; margin-bottom: 14px; border-radius: 12px; background: var(--surface-2); font-size: 14px; }
+.reset-bar p { flex: 1 1 240px; }
+
+main { padding-top: 22px; padding-bottom: 110px; display: grid; gap: 24px; }
+.sec-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; margin-bottom: 12px; }
+.sec-h h2 { font-size: 1.2rem; font-weight: 800; }
+.sec-h p { color: var(--muted); font-size: 14px; }
+
+/* garment picker */
+.garments { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.gar { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 12px; align-items: center; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: var(--r); background: var(--surface); text-align: start; }
+.gar svg { width: 64px; height: 64px; color: var(--muted); }
+.gar b { display: block; font-size: 15.5px; }
+.gar small { display: block; font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+.gar[aria-checked="true"] { border-color: var(--primary); background: var(--primary-soft); }
+.gar[aria-checked="true"] svg { color: var(--primary); }
+
+/* layout */
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+.side { position: sticky; top: 14px; display: grid; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 10px; }
+.prog { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; align-items: center; }
+.ring { position: relative; width: 96px; height: 96px; }
+.ring svg { width: 96px; height: 96px; transform: rotate(-90deg); }
+.ring .pct { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 900; font-size: 1.35rem; }
+.counts { display: grid; gap: 2px; font-size: 13.5px; }
+.counts span { display: flex; align-items: center; gap: 6px; }
+.counts i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.next { border: 1.5px solid var(--primary); background: var(--primary-soft); }
+.next .k { font-size: 12.5px; font-weight: 800; color: var(--primary); }
+.next h3 { font-size: 1.05rem; font-weight: 800; }
+.next dl { margin: 0; display: grid; gap: 6px; font-size: 14px; }
+.next dt { font-size: 12px; color: var(--muted); font-weight: 700; }
+.next dd { margin: 0; }
+.next .acts { display: flex; flex-wrap: wrap; gap: 8px; }
+.ready { border: 1.5px solid var(--done); background: var(--done-bg); }
+
+/* stages */
+.stages { position: relative; display: grid; gap: 14px; }
+.stages::before { content: ""; position: absolute; top: 24px; bottom: 24px; inset-inline-start: 23px; border-inline-start: 2px dashed var(--line-strong); }
+.stage { position: relative; display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; scroll-margin-top: 16px; }
+.dot { position: relative; z-index: 1; width: 48px; height: 48px; border-radius: 50%; background: var(--surface); border: 2px solid var(--line-strong); display: grid; place-items: center; color: var(--muted); }
+.dot svg { width: 24px; height: 24px; }
+.stage.part .dot { border-color: var(--doing); color: var(--doing); }
+.stage.full .dot { background: var(--done); border-color: var(--done); color: #fff; }
+.stage-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; min-width: 0; }
+.stage-h { display: grid; gap: 4px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.stage-h .t { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 10px; }
+.stage-h h2 { font-size: 1.05rem; font-weight: 800; }
+.stage-h .c { font-size: 13px; color: var(--muted); }
+.bar { height: 7px; border-radius: 999px; background: var(--surface-2); overflow: hidden; display: flex; }
+.bar i { display: block; height: 100%; }
+.bar .d { background: var(--done); } .bar .p { background: var(--doing); }
+.stage-h .ses { font-size: 12.5px; color: var(--muted); }
+.items { list-style: none; margin: 0; padding: 0; }
+.item { border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+.item:last-child { border-bottom: 0; }
+.item.next-hl { background: linear-gradient(to left, var(--primary-soft), transparent 70%); }
+.item-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; align-items: center; padding: 10px 14px; }
+.item-t { display: flex; align-items: flex-start; gap: 10px; border: 0; background: none; padding: 4px 0; text-align: start; min-width: 0; }
+.st-ic { flex: none; width: 22px; height: 22px; margin-top: 2px; }
+.item-t b { display: block; font-weight: 700; font-size: 15px; line-height: 1.55; }
+.item-t small { display: inline-flex; gap: 6px; font-size: 12px; color: var(--muted); }
+.item-t .req { color: var(--primary); font-weight: 700; }
+.item-t .chev { width: 16px; height: 16px; color: var(--muted); margin-top: 5px; flex: none; transition: transform 0.2s; }
+.item.open .item-t .chev { transform: rotate(180deg); }
+.seg { display: inline-flex; border: 1.5px solid var(--line-strong); border-radius: 10px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 6px 10px; min-height: 38px; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+.seg button + button { border-inline-start: 1px solid var(--line); }
+.seg button[aria-checked="true"].s-todo { background: var(--surface-2); color: var(--ink); font-weight: 700; }
+.seg button[aria-checked="true"].s-doing { background: var(--doing-bg); color: var(--doing); font-weight: 800; }
+.seg button[aria-checked="true"].s-done { background: var(--done-bg); color: var(--done); font-weight: 800; }
+.item-more { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; padding: 0 14px 12px 14px; padding-inline-start: 46px; font-size: 14px; }
+.item-more dt { font-size: 12px; font-weight: 700; color: var(--muted); }
+.item-more dd { margin: 0; }
+.optional-note { padding: 8px 14px; font-size: 12.5px; color: var(--muted); background: var(--surface-2); }
+
+/* dialog, toast, bar, footer */
+.dlg-wrap { position: fixed; inset: 0; z-index: 60; background: rgba(25, 18, 14, 0.55); display: grid; place-items: center; padding: 16px; }
+.dlg { width: min(600px, 100%); max-height: calc(100dvh - 32px); overflow: auto; background: var(--surface); border-radius: 16px; box-shadow: var(--shadow); display: grid; gap: 12px; padding: 20px; }
+.dlg-h { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.dlg-h h2 { font-size: 1.2rem; font-weight: 800; }
+.x { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--surface-2); display: grid; place-items: center; }
+.x svg { width: 18px; height: 18px; }
+.dlg label { font-weight: 700; font-size: 14px; }
+textarea { width: 100%; min-height: 76px; margin-top: 6px; padding: 10px 12px; border: 1.5px solid var(--line-strong); border-radius: 12px; background: var(--surface); font-size: 16px; line-height: 1.6; resize: vertical; }
+textarea:focus { outline: 3px solid var(--primary); outline-offset: 0; border-color: var(--primary); }
+.preview { margin: 0; padding: 12px 14px; border-radius: 12px; background: var(--surface-2); font-family: var(--body); font-size: 13.5px; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.acts { display: flex; flex-wrap: wrap; gap: 8px; }
+.hint { font-size: 12.5px; color: var(--muted); }
+.mbar { display: none; }
+.toast { position: fixed; z-index: 70; left: 50%; transform: translateX(-50%); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--surface); padding: 9px 16px; border-radius: 12px; font-size: 14px; box-shadow: var(--shadow); width: max-content; max-width: calc(100% - 32px); text-align: center; }
+.foot { border-top: 2px dashed var(--line-strong); }
+.foot .wrap { padding-top: 16px; padding-bottom: 24px; font-size: 12.5px; color: var(--muted); }
+.flash { animation: flash 1.6s ease-out; }
+@keyframes flash { 0%, 35% { box-shadow: inset 0 0 0 3px var(--primary); } 100% { box-shadow: none; } }
+
+@media (max-width: 940px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .side { position: static; order: -1; }
+  .garments { grid-template-columns: minmax(0, 1fr); }
+  .gar { grid-template-columns: 52px minmax(0, 1fr); }
+  .gar svg { width: 52px; height: 52px; }
+  .mbar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; background: var(--surface); border-top: 1px solid var(--line); box-shadow: 0 -10px 26px -20px rgba(0, 0, 0, 0.55); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .mbar .wrap { display: flex; align-items: center; gap: 10px; min-height: 60px; padding-top: 6px; padding-bottom: 6px; }
+  .mbar .m { flex: 1; min-width: 0; font-size: 12.5px; line-height: 1.5; }
+  .mbar .m b { display: block; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .toast { bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 600px) {
+  .hero .btn { width: 100%; }
+  .stages::before { inset-inline-start: 17px; }
+  .stage { grid-template-columns: 36px minmax(0, 1fr); gap: 8px; }
+  .dot { width: 36px; height: 36px; }
+  .dot svg { width: 18px; height: 18px; }
+  .item-row { grid-template-columns: minmax(0, 1fr); padding: 10px 12px; }
+  .seg { justify-self: stretch; }
+  .seg button { flex: 1; padding: 6px 4px; }
+  .item-more { grid-template-columns: minmax(0, 1fr); padding: 0 12px 12px; padding-inline-start: 44px; }
+  .dlg-wrap { place-items: end center; padding: 0; }
+  .dlg { border-radius: 16px 16px 0 0; max-height: 92dvh; padding: 18px 16px calc(18px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (prefers-reduced-motion: reduce) { .flash { animation: none; } .item-t .chev { transition: none; } }
+</style>
+</head>
+<body>
+<header class="head">
+  <div class="wrap head-top">
+    <span class="brand">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="9" fill="var(--primary)"/><path d="M10 24L24 10" stroke="var(--primary-ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="22" cy="12" r="2.6" fill="none" stroke="var(--primary-ink)" stroke-width="1.8"/><path d="M8 13c3 0 3 4 6 4s3 4 6 4" fill="none" stroke="var(--primary-ink)" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.8"/></svg>
+      برای آموزشگاه هنر مادر
+    </span>
+    <span class="tag">دموی پیشنهادی DARIUSH Digital Studio</span>
+    <button class="link" type="button" id="reset-ask">بازنشانی دمو</button>
+  </div>
+  <div class="wrap hero">
+    <div>
+      <h1>چک‌لیست دوخت اولین لباس</h1>
+      <p>ببینید کدام مهارت‌ها را تمرین کرده‌اید، کدام هنوز مانده و قدم بعدی چیست؛ بعد خلاصه‌اش را برای مربی بفرستید.</p>
+    </div>
+    <button class="btn btn-primary" type="button" id="sample">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      امتحان با هنرجوی نمونه
+    </button>
+  </div>
+  <div class="wrap"><div class="reset-bar" id="reset-bar" hidden>
+    <p>همهٔ وضعیت‌های چک‌لیست و سؤال‌ها در این مرورگر پاک می‌شود.</p>
+    <button class="btn btn-primary btn-sm" type="button" id="reset-yes">بازنشانی</button>
+    <button class="btn btn-line btn-sm" type="button" id="reset-no">انصراف</button>
+  </div></div>
+</header>
+
+<main class="wrap">
+  <section aria-labelledby="h-gar">
+    <div class="sec-h"><h2 id="h-gar">اولین لباس شما</h2><p>مهارت‌های لازم با انتخاب لباس عوض می‌شود.</p></div>
+    <div class="garments" role="radiogroup" aria-labelledby="h-gar" id="garments"></div>
+  </section>
+  <div class="layout">
+    <section aria-labelledby="h-stages">
+      <div class="sec-h"><h2 id="h-stages">مهارت‌ها، قدم به قدم</h2><p>روی هر مهارت بزنید تا روش تمرین و نشانهٔ تسلط را ببینید. <span class="demo">محتوای نمونه</span></p></div>
+      <div class="stages" id="stages"></div>
+    </section>
+    <aside class="side" id="side" aria-label="پیشرفت و قدم بعدی"></aside>
+  </div>
+</main>
+
+<div class="mbar" id="mbar"></div>
+<footer class="foot"><div class="wrap">این صفحه یک دموی پیشنهادی از DARIUSH Digital Studio است و سایت رسمی آموزشگاه هنر مادر نیست. مهارت‌ها، روش‌های تمرین و جلسه‌ها نمونه است و آموزشگاه می‌تواند برنامهٔ خودش را جایگزین کند. وضعیت‌ها فقط در همین مرورگر می‌ماند و پیامی ارسال نمی‌شود.</div></footer>
+
+<div class="dlg-wrap" id="dlg" hidden>
+  <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlg-t">
+    <div class="dlg-h"><h2 id="dlg-t">خلاصه برای مربی</h2><button class="x" type="button" id="dlg-x" aria-label="بستن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div><label for="q">سؤال یا توضیح برای مربی (اختیاری)</label><textarea id="q" maxlength="300" placeholder="مثلاً: در دوخت منحنی کوک‌ها کج می‌شود؛ تمرین بیشتری لازم است؟"></textarea></div>
+    <div><p class="hint" style="margin-bottom:6px">متنی که کپی می‌شود:</p><pre class="preview" id="preview"></pre></div>
+    <div class="acts"><button class="btn btn-primary" type="button" id="copy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>کپی خلاصه</button><button class="btn btn-line" type="button" id="dlg-close">بستن</button></div>
+    <p class="hint">پیامی خودکار ارسال نمی‌شود؛ متن را خودتان در پیام‌رسان برای مربی بفرستید.</p>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+/* =====================================================================
+   محتوای نمونهٔ چک‌لیست (قابل ویرایش)
+   GARMENTS: لباس‌های اول قابل انتخاب و مراحل دوخت هرکدام
+   STAGES: مراحل مهارت؛ هر مهارت: t (عنوان)، how (چطور تمرین کنم)، sign (نشانهٔ تسلط)
+     need: لباس‌هایی که این مهارت برایشان لازم است. بدون need = لازم برای همه؛ need: [] = اختیاری
+   ===================================================================== */
+const GARMENTS = {
+  skirt: { label: "دامن کمرکش‌دار", hint: "ساده‌ترین شروع؛ دو درز، کمر کشی و سجاف",
+    icon: '<path d="M22 14h20l8 36H14z"/><path d="M22 18h20"/><path d="M26 14v-2h12v2"/>',
+    steps: [
+      { id: "g-cut", t: "برش قطعات دامن", how: "دو قطعهٔ جلو و پشت را با جای درز ببرید و چرت بزنید.", sign: "دو قطعه روی هم کاملاً هم‌اندازه‌اند." },
+      { id: "g-side", t: "دوخت درزهای پهلو", how: "درزها را با جای درز یک سانتی بدوزید، تمیزدوزی و اتو کنید.", sign: "درزها صاف و هم‌عرض است و داخل لباس تمیز است." },
+      { id: "g-waist", t: "ساخت کمر کش‌دار", how: "کانال کمر را بدوزید، کش را رد کنید و سرهایش را به هم بدوزید.", sign: "کمر یکنواخت چین می‌خورد و کش نمی‌پیچد." },
+      { id: "g-hem", t: "سجاف پایین دامن", how: "لبه را دوبار برگردانید، اتو کنید و نزدیک لبه بدوزید.", sign: "سجاف هم‌عرض است و از رو کوک‌ها صاف دیده می‌شود." },
+      { id: "g-fit", t: "پرو، اصلاح و اتوی نهایی", how: "دامن را بپوشید، طول و کمر را اصلاح و کل لباس را اتو کنید.", sign: "دامن اندازه است و آمادهٔ پوشیدن." },
+    ] },
+  blouse: { label: "بلوز ساده بدون آستین", hint: "پنس، یقه و حلقهٔ آستین با مغزی",
+    icon: '<path d="M24 12l-8 6 4 8v26h24V26l4-8-8-6"/><path d="M24 12c2 5 14 5 16 0"/><path d="M26 30l6 6 6-6"/>',
+    steps: [
+      { id: "g-cut", t: "برش جلو و پشت بلوز", how: "قطعات را با توجه به راه پارچه ببرید و جای پنس را علامت بزنید.", sign: "علامت پنس‌ها روی دو طرف قرینه است." },
+      { id: "g-dart", t: "دوخت پنس سینه", how: "پنس‌ها را از پهنا به نوک بدوزید و رو به پایین اتو کنید.", sign: "نوک پنس صاف تمام می‌شود و حباب ندارد." },
+      { id: "g-side", t: "دوخت درز شانه و پهلو", how: "اول شانه‌ها، بعد پهلوها را بدوزید و تمیزدوزی کنید.", sign: "درزها روی هم می‌نشینند و پیچ نمی‌خورند." },
+      { id: "g-bind", t: "تمیزدوزی یقه و حلقهٔ آستین", how: "مغزی اریب را دور یقه و حلقه بدوزید و به داخل برگردانید.", sign: "یقه موج برنمی‌دارد و مغزی از رو دیده نمی‌شود." },
+      { id: "g-hem", t: "سجاف پایین و اتوی نهایی", how: "لبهٔ پایین را دوبار برگردانید و بدوزید؛ بعد کل بلوز را اتو کنید.", sign: "بلوز صاف می‌ایستد و آمادهٔ پوشیدن است." },
+    ] },
+  pants: { label: "شلوار راحتی کمرکش‌دار", hint: "درز منحنی فاق، کمر کشی و سجاف پاچه",
+    icon: '<path d="M20 12h24l4 40h-10l-6-26-6 26H16z"/><path d="M20 17h24"/>',
+    steps: [
+      { id: "g-cut", t: "برش چهار قطعهٔ شلوار", how: "جلو و پشت هر پا را جدا ببرید و جلو و پشت را علامت بزنید.", sign: "قطعه‌ها جابه‌جا نمی‌شوند و علامت‌ها روشن است." },
+      { id: "g-crotch", t: "دوخت فاق جلو و پشت", how: "درز منحنی فاق را دوبار بدوزید و چرت بزنید.", sign: "منحنی صاف است و موقع نشستن درز کشیده نمی‌شود." },
+      { id: "g-side", t: "دوخت درز داخل پا و پهلو", how: "درز داخل پا را یکسره بدوزید، بعد پهلوها را.", sign: "دو پاچه هم‌طول است و درزها پیچ ندارد." },
+      { id: "g-waist", t: "ساخت کمر کش‌دار", how: "کانال کمر را بدوزید و کش را رد کنید.", sign: "کمر یکنواخت است و کش نمی‌پیچد." },
+      { id: "g-hem", t: "سجاف پاچه و اتوی نهایی", how: "پاچه‌ها را دوبار برگردانید و بدوزید؛ بعد کل شلوار را اتو کنید.", sign: "پاچه‌ها هم‌طول و صاف است و شلوار آمادهٔ پوشیدن است." },
+    ] },
+};
+const STAGES = [
+  { id: "machine", title: "آشنایی با چرخ و ابزار", session: "جلسهٔ ۱ و ۲ دورهٔ مقدماتی",
+    icon: '<rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 17v3h10v-3M15 7V4h3"/><circle cx="16" cy="12" r="1.6"/>',
+    items: [
+      { id: "thread", t: "نخ کردن چرخ و پر کردن ماسوره", how: "سه بار پشت سر هم چرخ را از صفر نخ کنید.", sign: "بدون نگاه به دفترچه، کمتر از دو دقیقه طول می‌کشد." },
+      { id: "line", t: "دوخت خط صاف و منحنی روی کاغذ", how: "روی برگهٔ تمرین خط‌دار، بدون نخ بدوزید.", sign: "سوراخ‌ها حتی در پیچ‌ها روی خط می‌ماند." },
+      { id: "tension", t: "تنظیم طول کوک و کشش نخ", how: "روی تکه پارچه چند تنظیم را امتحان و مقایسه کنید.", sign: "کوک از هر دو رو صاف است و پارچه جمع نمی‌شود." },
+      { id: "tools", t: "کار با قیچی پارچه، متر و گچ خیاطی", how: "یک مستطیل ۲۰ در ۳۰ سانتی علامت بزنید و ببرید.", sign: "لبه‌ها صاف و خطای اندازه کمتر از ۳ میلی‌متر است." },
+    ] },
+  { id: "fabric", title: "پارچه و اندازه‌گیری", session: "جلسهٔ ۳ دورهٔ مقدماتی",
+    icon: '<path d="M4 7h12a4 4 0 0 1 0 8H4z"/><path d="M4 15v3h16"/><path d="M8 7v3M12 7v3"/>',
+    items: [
+      { id: "grain", t: "شناخت راه پارچه (راسته و اریب)", how: "روی سه نوع پارچه راسته و اریب را پیدا و علامت بزنید.", sign: "بدون کمک می‌گویید الگو باید در کدام جهت قرار بگیرد." },
+      { id: "prewash", t: "شستن و اتوی پارچه پیش از برش", how: "یک تکه پارچه را بشویید و آب‌رفتش را اندازه بگیرید.", sign: "می‌دانید کدام پارچه پیش‌شستن لازم دارد." },
+      { id: "measure", t: "اندازه‌گیری بدن", how: "دور کمر، باسن و قد را دو بار اندازه بگیرید و مقایسه کنید.", sign: "دو اندازه‌گیری کمتر از یک سانتی‌متر اختلاف دارد." },
+      { id: "size", t: "خواندن جدول سایز الگو", how: "سایز خودتان را در جدول یک الگوی آماده پیدا کنید.", sign: "بین دو سایز، درست انتخاب می‌کنید." },
+    ] },
+  { id: "pattern", title: "الگو و برش", session: "جلسهٔ ۴ و ۵ دورهٔ مقدماتی",
+    icon: '<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/>',
+    items: [
+      { id: "trace", t: "کپی کردن الگو روی کاغذ", how: "یک الگوی ساده را با علامت‌هایش روی کاغذ پوستی کپی کنید.", sign: "خطوط و علامت‌ها کامل و خوانا منتقل شده است." },
+      { id: "allow", t: "اضافه کردن جای درز", how: "دور الگو یک سانتی جای درز و برای سجاف سه سانتی اضافه کنید.", sign: "جای درز همه‌جا هم‌عرض است." },
+      { id: "layout", t: "چیدن الگو روی پارچه", how: "قطعه‌ها را هم‌جهت راه پارچه بچینید و سنجاق کنید.", sign: "کمترین پارچه هدر می‌رود و جهت‌ها درست است." },
+      { id: "cut", t: "برش دقیق و علامت‌گذاری (چرت)", how: "قطعه‌ها را با قیچی ببرید و چرت‌ها را کوتاه بزنید.", sign: "لبه‌ها صاف است و چرت‌ها از جای درز بیرون نمی‌زند." },
+    ] },
+  { id: "seams", title: "درز و تمیزدوزی", session: "جلسهٔ ۶ و ۷ دورهٔ مقدماتی",
+    icon: '<path d="M4 20L20 4"/><path d="M6 12l2 2M10 8l2 2M14 4l2 2M10 16l2 2M14 12l2 2" />',
+    items: [
+      { id: "seam", t: "دوخت درز ساده با جای درز یک سانتی", how: "روی دو تکه پارچه، سه درز ۳۰ سانتی بدوزید.", sign: "جای درز در تمام طول یک سانتی می‌ماند." },
+      { id: "backtack", t: "کوک برگشت در ابتدا و انتهای درز", how: "ابتدا و انتهای هر درز دو سه کوک برگردید.", sign: "درز با کشیدن باز نمی‌شود." },
+      { id: "finish", t: "تمیزدوزی لبه با زیگزاگ یا سردوز", how: "لبهٔ هر درز را زیگزاگ یا سردوز کنید.", sign: "لبه بعد از شستن ریش نمی‌شود." },
+      { id: "press", t: "باز کردن و اتوی درز", how: "هر درز را بعد از دوخت باز کنید و از پشت اتو بزنید.", sign: "درز از رو صاف است و برجستگی ندارد." },
+      { id: "curve", t: "دوخت درز منحنی", need: ["blouse", "pants"], how: "یک منحنی نیم‌دایره بدوزید و جای درز را چرت بزنید.", sign: "منحنی از رو صاف است و چین نمی‌خورد." },
+    ] },
+  { id: "details", title: "جزئیات لباس", session: "جلسهٔ ۸ تا ۱۰ دورهٔ مقدماتی",
+    icon: '<path d="M12 3v18"/><path d="M9 6h6M9 9h6M9 12h6M9 15h6"/><rect x="10" y="17" width="4" height="4" rx="1"/>',
+    items: [
+      { id: "elastic", t: "کانال و کمر کش‌دار", need: ["skirt", "pants"], how: "روی یک تکه پارچه کانال بدوزید و کش رد کنید.", sign: "کش راحت رد می‌شود و چین یکنواخت است." },
+      { id: "hem", t: "سجاف دوبل لبهٔ پایین", need: ["skirt", "blouse", "pants"], how: "لبه را دوبار برگردانید، اتو و نزدیک لبه دوخت کنید.", sign: "سجاف هم‌عرض و صاف است." },
+      { id: "dart", t: "دوخت پنس", need: ["blouse"], how: "روی تکه پارچه دو پنس قرینه بدوزید و اتو کنید.", sign: "نوک پنس صاف تمام می‌شود." },
+      { id: "bias", t: "تمیزدوزی با مغزی اریب", need: ["blouse"], how: "مغزی را دور یک منحنی بدوزید و برگردانید.", sign: "منحنی موج برنمی‌دارد." },
+      { id: "zip", t: "نصب زیپ ساده", need: [], how: "یک زیپ معمولی را در درز تمرینی نصب کنید.", sign: "زیپ صاف بسته می‌شود و پارچه گیر نمی‌کند." },
+      { id: "button", t: "دوخت دکمه و جادکمه", need: [], how: "سه جادکمه با چرخ بدوزید و دکمه‌ها را بدوزید.", sign: "دکمه راحت رد می‌شود و جادکمه ریش نمی‌شود." },
+    ] },
+  { id: "garment", title: "لباس اول", session: "جلسهٔ ۱۱ تا ۱۴ دورهٔ مقدماتی", garment: true,
+    icon: '<path d="M8 4l-5 4 3 4v9h12v-9l3-4-5-4"/><path d="M8 4c1 3 7 3 8 0"/>' },
+];
+const STATUS = { todo: "هنوز نه", doing: "در حال تمرین", done: "تسلط دارم" };
+const SAMPLE = {
+  garment: "skirt",
+  s: { thread: "done", line: "done", tension: "done", tools: "done", grain: "done", prewash: "done", measure: "done", size: "doing", trace: "done", allow: "doing", seam: "doing", backtack: "done" },
+};
+
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const fa = (n) => Number(n).toLocaleString("fa-IR", { maximumFractionDigits: 0, useGrouping: false });
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const svg = (p, w = 1.8, vb = 24) => `<svg viewBox="0 0 ${vb} ${vb}" fill="none" stroke="currentColor" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
+  const IC = {
+    todo: '<svg class="st-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--todo)" stroke-width="2" stroke-dasharray="3 2.6"/></svg>',
+    doing: '<svg class="st-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--doing)" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="var(--doing)"/></svg>',
+    done: '<svg class="st-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="var(--done)"/><path d="M7.5 12.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    chev: svg('<path d="M6 9l6 6 6-6"/>', 2).replace("<svg ", '<svg class="chev" '),
+  };
+  let tt;
+  function toast(m) { const t = $("#toast"); t.textContent = m; t.hidden = false; clearTimeout(tt); tt = setTimeout(() => (t.hidden = true), 2800); }
+
+  /* ---------- state ---------- */
+  const KEY = "madar-first-garment-checklist-v1";
+  const blank = () => ({ garment: "skirt", s: {}, open: null, q: "" });
+  let st = blank();
+  try { const d = JSON.parse(localStorage.getItem(KEY)); if (d && GARMENTS[d.garment]) st = Object.assign(blank(), d); } catch (e) {}
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} };
+
+  /* ---------- model ---------- */
+  const required = (it) => !it.need || it.need.includes(st.garment);
+  function stageItems(sg) { return sg.garment ? GARMENTS[st.garment].steps.map((x) => ({ ...x, need: undefined })) : sg.items; }
+  function keyOf(sg, it) { return sg.garment ? `${st.garment}:${it.id}` : it.id; }
+  const status = (sg, it) => st.s[keyOf(sg, it)] || "todo";
+  function model() {
+    const stages = STAGES.map((sg) => {
+      const all = stageItems(sg), req = all.filter(required);
+      const n = { done: 0, doing: 0, todo: 0 };
+      req.forEach((it) => n[status(sg, it)]++);
+      return { sg, all, req, n };
+    });
+    const req = stages.flatMap((x) => x.req.map((it) => ({ sg: x.sg, it, s: status(x.sg, it) })));
+    const done = req.filter((r) => r.s === "done").length, doing = req.filter((r) => r.s === "doing").length;
+    const pct = Math.round(((done + doing * 0.5) / req.length) * 100);
+    const next = req.find((r) => r.s !== "done");
+    const preGarment = req.filter((r) => !r.sg.garment), readyForGarment = preGarment.every((r) => r.s === "done");
+    return { stages, req, done, doing, todo: req.length - done - doing, pct, next, readyForGarment, finished: done === req.length };
+  }
+
+  /* ---------- render ---------- */
+  function renderGarments() {
+    $("#garments").innerHTML = Object.entries(GARMENTS).map(([k, g]) =>
+      `<button class="gar" type="button" role="radio" data-garment="${k}" data-k="gar-${k}" aria-checked="${st.garment === k}">${svg(g.icon, 2.2, 64)}<span><b>${g.label}</b><small>${g.hint}</small></span></button>`).join("");
+  }
+  function renderStages(M) {
+    const nextKey = M.next ? keyOf(M.next.sg, M.next.it) : null;
+    $("#stages").innerHTML = M.stages.map(({ sg, all, req, n }, i) => {
+      const full = n.done === req.length, part = !full && (n.done || n.doing);
+      const opt = all.filter((it) => !required(it));
+      const row = (it) => {
+        const k = keyOf(sg, it), s = status(sg, it), isReq = required(it), open = st.open === k;
+        return `<li class="item ${open ? "open" : ""} ${k === nextKey ? "next-hl" : ""}" id="it-${k.replace(":", "-")}">
+          <div class="item-row">
+            <button class="item-t" type="button" data-open="${k}" data-k="open-${k}" aria-expanded="${open}">${IC[s]}<span><b>${it.t}</b><small>${isReq ? `<span class="req">لازم برای ${GARMENTS[st.garment].label}</span>` : "اختیاری برای این لباس"}${k === nextKey ? " · قدم بعدی" : ""}</small></span>${IC.chev}</button>
+            <span class="seg" role="radiogroup" aria-label="وضعیت: ${esc(it.t)}">${Object.entries(STATUS).map(([v, l]) =>
+              `<button type="button" role="radio" class="s-${v}" data-set="${k}" data-v="${v}" data-k="set-${k}-${v}" aria-checked="${s === v}" tabindex="${s === v ? 0 : -1}">${l}</button>`).join("")}</span>
+          </div>
+          ${open ? `<dl class="item-more"><div><dt>چطور تمرین کنم</dt><dd>${it.how}</dd></div><div><dt>نشانهٔ تسلط</dt><dd>${it.sign}</dd></div></dl>` : ""}
+        </li>`;
+      };
+      const d = req.length ? (n.done / req.length) * 100 : 0, p = req.length ? (n.doing / req.length) * 100 : 0;
+      return `<section class="stage ${full ? "full" : part ? "part" : ""}" id="sg-${sg.id}" aria-labelledby="h-${sg.id}">
+        <span class="dot" aria-hidden="true">${full ? svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>', 2.6) : svg(sg.icon)}</span>
+        <div class="stage-card">
+          <div class="stage-h">
+            <div class="t"><h2 id="h-${sg.id}">${fa(i + 1)}. ${sg.garment ? `${sg.title}: ${GARMENTS[st.garment].label}` : sg.title}</h2><span class="c">${fa(n.done)} از ${fa(req.length)} تسلط${n.doing ? ` · ${fa(n.doing)} در حال تمرین` : ""}</span></div>
+            <div class="bar" aria-hidden="true"><i class="d" style="width:${d}%"></i><i class="p" style="width:${p}%"></i></div>
+            <span class="ses">${sg.session} <span class="demo">نمونه</span></span>
+          </div>
+          <ul class="items">${all.filter(required).map(row).join("")}${opt.length ? opt.map(row).join("") : ""}</ul>
+          ${sg.garment && !M.readyForGarment ? `<p class="optional-note">مراحل دوخت لباس را بعد از تسلط بر مهارت‌های لازم شروع کنید؛ تیک زدنشان از الان هم ممکن است.</p>` : ""}
+        </div>
+      </section>`;
+    }).join("");
+  }
+  function renderSide(M) {
+    const C = 2 * Math.PI * 40, dDone = (M.done / M.req.length) * C, dDoing = (M.doing / M.req.length) * C;
+    const nx = M.next;
+    const nextCard = M.finished
+      ? `<div class="card ready"><span class="k" style="color:var(--done);font-weight:800;font-size:12.5px">آفرین!</span><h3 style="font-size:1.05rem;font-weight:800">${GARMENTS[st.garment].label} آماده است</h3><p>قدم بعدی: لباس دوم با جزئیات بیشتر، مثلاً یقه، آستین یا زیپ. <span class="demo">نمونه</span></p><div class="acts"><button class="btn btn-primary" type="button" data-summary>خلاصه برای مربی</button></div></div>`
+      : `<div class="card next"><span class="k">قدم بعدی</span><h3>${nx.it.t}</h3>
+          <dl><div><dt>${nx.s === "doing" ? "ادامهٔ تمرین" : "چطور تمرین کنم"}</dt><dd>${nx.it.how}</dd></div><div><dt>کی آماده‌اید؟</dt><dd>${nx.it.sign}</dd></div>
+          <div><dt>کجای دوره</dt><dd>${nx.sg.session} <span class="demo">نمونه</span></dd></div></dl>
+          <div class="acts"><button class="btn btn-line btn-sm" type="button" data-goto="${keyOf(nx.sg, nx.it)}">نمایش در چک‌لیست</button><button class="btn btn-primary btn-sm" type="button" data-summary>خلاصه برای مربی</button></div></div>`;
+    $("#side").innerHTML = `
+      <div class="card">
+        <div class="prog">
+          <div class="ring" role="img" aria-label="پیشرفت ${fa(M.pct)} درصد">
+            <svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="40" fill="none" stroke="var(--surface-2)" stroke-width="10"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--done)" stroke-width="10" stroke-dasharray="${dDone} ${C}"/>
+              <circle cx="48" cy="48" r="40" fill="none" stroke="var(--doing)" stroke-width="10" stroke-dasharray="${dDoing} ${C}" stroke-dashoffset="${-dDone}"/></svg>
+            <span class="pct">٪${fa(M.pct)}</span>
+          </div>
+          <div><b style="font-size:15px">تا ${GARMENTS[st.garment].label}</b>
+            <div class="counts"><span><i style="background:var(--done)"></i>${fa(M.done)} مهارت با تسلط</span><span><i style="background:var(--doing)"></i>${fa(M.doing)} در حال تمرین</span><span><i style="background:var(--line-strong)"></i>${fa(M.todo)} هنوز نه</span></div></div>
+        </div>
+        <p class="hint">از ${fa(M.req.length)} مهارت و مرحلهٔ لازم؛ «در حال تمرین» نیم امتیاز دارد.</p>
+      </div>
+      ${nextCard}`;
+    $("#mbar").innerHTML = `<div class="wrap"><div class="m"><b>٪${fa(M.pct)} · ${M.finished ? "لباس اول آماده است" : "بعدی: " + nx.it.t}</b><span class="muted">${fa(M.done)} از ${fa(M.req.length)} با تسلط</span></div>
+      ${M.finished ? "" : `<button class="btn btn-line btn-sm" type="button" data-goto="${keyOf(nx.sg, nx.it)}">قدم بعدی</button>`}<button class="btn btn-primary btn-sm" type="button" data-summary>خلاصه</button></div>`;
+  }
+  function render() {
+    const a = document.activeElement, k = a && a.dataset ? a.dataset.k : null;
+    const M = model();
+    renderGarments(); renderStages(M); renderSide(M);
+    if (k) { const el = document.querySelector(`[data-k="${k}"]`); if (el) el.focus({ preventScroll: true }); }
+    if (!$("#dlg").hidden) $("#preview").textContent = summaryText();
+    save();
+  }
+
+  /* ---------- summary ---------- */
+  function summaryText() {
+    const M = model(), g = GARMENTS[st.garment];
+    const list = (s) => M.req.filter((r) => r.s === s).map((r) => r.it.t);
+    const doing = list("doing");
+    const perStage = M.stages.map(({ sg, req, n }) => `${sg.garment ? "لباس اول" : sg.title}: ${fa(n.done)} از ${fa(req.length)}`).join("، ");
+    const out = [
+      "خلاصهٔ پیشرفت · آموزشگاه هنر مادر (دمو)",
+      `لباس اول: ${g.label}`,
+      `پیشرفت: ٪${fa(M.pct)} · ${fa(M.done)} از ${fa(M.req.length)} مهارت با تسلط`,
+      `به تفکیک مرحله: ${perStage}`,
+      `در حال تمرین: ${doing.length ? doing.join("، ") : "هیچ"}`,
+      M.finished ? "قدم بعدی: لباس دوم با جزئیات بیشتر" : `قدم بعدی: ${M.next.it.t}`,
+    ];
+    if (st.q.trim()) out.push(`سؤال من: ${st.q.trim()}`);
+    out.push("محتوای چک‌لیست نمونه است.");
+    return out.join("\n");
+  }
+  let lastFocus = null;
+  function openDlg() { lastFocus = document.activeElement; $("#q").value = st.q; $("#preview").textContent = summaryText(); $("#dlg").hidden = false; $("#copy").focus(); }
+  function closeDlg() { $("#dlg").hidden = true; if (lastFocus && document.contains(lastFocus)) lastFocus.focus(); }
+  function copy(text) {
+    const manual = () => {
+      const ta = document.createElement("textarea"); ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta); ta.select(); let ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+      ta.remove(); toast(ok ? "خلاصه کپی شد؛ آن را برای مربی بفرستید." : "کپی ممکن نشد؛ متن را انتخاب و کپی کنید.");
+    };
+    try { navigator.clipboard.writeText(text).then(() => toast("خلاصه کپی شد؛ آن را برای مربی بفرستید."), manual); } catch (e) { manual(); }
+  }
+
+  /* ---------- events ---------- */
+  const smooth = () => (matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth");
+  function goTo(k) {
+    st.open = k; render();
+    const el = document.getElementById("it-" + k.replace(":", "-"));
+    if (el) { el.scrollIntoView({ block: "center", behavior: smooth() }); el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+  }
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("button"); if (!b) return;
+    const d = b.dataset;
+    if (d.garment) { st.garment = d.garment; st.open = null; render(); toast(`مهارت‌های لازم برای «${GARMENTS[d.garment].label}» به‌روز شد.`); return; }
+    if (d.open) { st.open = st.open === d.open ? null : d.open; render(); return; }
+    if (d.set) {
+      const before = model();
+      if (d.v === "todo") delete st.s[d.set]; else st.s[d.set] = d.v;
+      render();
+      const after = model();
+      if (after.finished && !before.finished) toast("آفرین! همهٔ قدم‌های لباس اول تمام شد.");
+      else if (after.readyForGarment && !before.readyForGarment) toast("مهارت‌های لازم کامل شد؛ نوبت دوخت لباس اول است.");
+      else if (d.v === "done") toast("ثبت شد: تسلط دارم.");
+      return;
+    }
+    if (d.goto) { goTo(d.goto); return; }
+    if (d.summary !== undefined) { openDlg(); return; }
+    if (b.id === "copy") { copy(summaryText()); return; }
+    if (b.id === "dlg-x" || b.id === "dlg-close") { closeDlg(); return; }
+    if (b.id === "sample") {
+      st = Object.assign(blank(), { garment: SAMPLE.garment, s: { ...SAMPLE.s }, q: "" });
+      const M = model(); st.open = M.next ? keyOf(M.next.sg, M.next.it) : null; render();
+      const k = st.open; if (k) goTo(k);
+      toast("هنرجوی نمونه: دامن کمرکش‌دار، ابزار و پارچه را بلد است، وسط الگو و برش است.");
+      return;
+    }
+  });
+  document.addEventListener("input", (e) => { if (e.target.id === "q") { st.q = e.target.value; save(); $("#preview").textContent = summaryText(); } });
+  $("#dlg").addEventListener("click", (e) => { if (e.target.id === "dlg") closeDlg(); });
+  document.addEventListener("keydown", (e) => {
+    if (!$("#dlg").hidden) {
+      if (e.key === "Escape") { closeDlg(); return; }
+      if (e.key === "Tab") {
+        const f = [...$("#dlg").querySelectorAll("button, textarea")];
+        if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+      }
+      return;
+    }
+    const r = e.target.closest && e.target.closest("[role=radio]");
+    if (r && ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(e.key)) {
+      e.preventDefault();
+      const all = [...r.parentElement.querySelectorAll("[role=radio]")], i = all.indexOf(r), step = e.key === "ArrowLeft" || e.key === "ArrowDown" ? 1 : -1;
+      all[(i + step + all.length) % all.length].click();
+    }
+  });
+  $("#reset-ask").addEventListener("click", () => { $("#reset-bar").hidden = false; $("#reset-yes").focus(); });
+  $("#reset-no").addEventListener("click", () => { $("#reset-bar").hidden = true; });
+  $("#reset-yes").addEventListener("click", () => {
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    st = blank(); $("#reset-bar").hidden = true; render(); scrollTo({ top: 0, behavior: smooth() }); toast("چک‌لیست از اول شروع شد.");
+  });
+  render();
+})();
+</script>
+</body>
+</html>
